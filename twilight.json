@@ -1,13 +1,13 @@
 {
     "name": {
-        "ar": "سدو",
-        "en": "Noor Store"
+        "ar": "ضي",
+        "en": "Daay"
     },
     "version": "2.0.0",
-    "version_id": "noor-store-theme-v2",
-    "theme_id": "noor-store-theme",
+    "version_id": "kenany-theme-v2",
+    "theme_id": "kenany-theme",
     "platform_version": "2.14.199",
-    "repository": "https://github.com/maanicompany22/noor-store-theme",
+    "repository": "https://github.com/maanicompany22/kenany",
     "author_email": "saduagency0@gmail.com",
     "features": [
         "mega-menu",
