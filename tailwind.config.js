@@ -1,11 +1,20 @@
 module.exports = {
     important: false,
     content: [
-        "src/views/**/*.twig",
-        "src/assets/js/**/*.js",
-        //todo:: inject it via the plugin or easier way
-        'node_modules/@salla.sa/twilight-tailwind-theme/safe-list-css.txt',
-    ],
+  "./src/views/**/*.twig",
+  "./src/assets/js/**/*.js",
+],
+
+safelist: [
+  // essentials used dynamically in twig/components
+  'hidden',
+  'block',
+  'flex',
+  'grid',
+  'rtl',
+  'ltr',
+],
+
     darkMode: 'class', // or 'media' or 'class'
     theme   : {
         container : {

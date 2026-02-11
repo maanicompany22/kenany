@@ -1,4 +1,3 @@
-// postcss.config.js
 module.exports = {
   plugins: {
     'postcss-import': {},
@@ -6,6 +5,9 @@ module.exports = {
     tailwindcss: {},
     'postcss-preset-env': {
       features: { 'nesting-rules': true },
+    },
+    cssnano: {
+      preset: 'default',
     },
   }
 }

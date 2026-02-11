@@ -2,6 +2,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ThemeWatcher = require('@salla.sa/twilight/watcher.js');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const asset = file => path.resolve('src/assets', file || '');
 const public = file => path.resolve("public", file || '');
@@ -24,6 +26,12 @@ module.exports = {
         clean: true,
         chunkFilename: "[name].[contenthash].js"
     },
+    optimization: {
+  splitChunks: {
+    chunks: 'all',
+  },
+  runtimeChunk: 'single',
+},
     stats  : {modules: false, assetsSort: "size", assetsSpace: 50},
     module : {
         rules: [
